@@ -33,7 +33,7 @@ body {
   top: 50%;
   left: 50%;
   z-index: 99;
-  margin-top: 130px;
+  margin-top: 135px;
   transform: translateY(-50%) translateX(-50%);
   text-align: center;
 }
