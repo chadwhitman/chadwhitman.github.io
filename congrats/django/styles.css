@@ -19,10 +19,10 @@ body {
 
 .credit {
   position: absolute;
-  right: 88px;
+  right: 90px;
   bottom: 14px;
   font-size: 6px;
-  opacity: 0.26;
+  opacity: 0.3;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 
