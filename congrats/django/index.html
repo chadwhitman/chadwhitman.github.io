@@ -15,8 +15,16 @@
     </head>
     <body>
         <header>
-            <a target="_blank" href="https://www.djangoproject.com/"><div class="logo">Django</div></a>
-            <div class="about">The web framework for perfectionists with deadlines.</div>
+            <a target="_blank" href="https://www.djangoproject.com/"><div class="logo">
+              Django
+              <div class="sub-logo">
+                The web framework for perfectionists with deadlines.
+              </div>
+            </div></a>
+            <div class="about">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              <div class="info">You're seeing this page because you have <strong>DEBUG=True</strong> in your Django settings file and you haven't configured any URLs.</div>
+            </div>
             <div class="border clearfix"></div>
         </header>
         <div class="guitar">
@@ -26,23 +34,31 @@
             <div class="credit">Animation &copy; Cornelius Joksch</div>
           </a>
           <div class="congrats">
-              <div class="m-border"></div>
-              <h2>It Worked! Congratulations!</h2>
+              <h2>Install Worked! Congratulations!</h2>
               <p>You've created a project powered by Django 1.10!<br>
-              <a target="_blank" href="https://docs.djangoproject.com/en/1.10/releases/1.10/">Django 1.10 Release Notes</a>
-              <br><br>
-              You are seeing this page because you have <strong>DEBUG=True</strong> in your Django settings file and you haven't configured any URLs.
-              <br><br>
-              What's next? Check out the options below.
-              </p>
+              <a target="_blank" class="notes" href="https://docs.djangoproject.com/en/1.10/releases/1.10/">View Django 1.10 Release Notes</a>
           </div>
         </div>
         <footer class="clearfix">
+          <div class="step one settings">
+            <a target="_blank" href="https://docs.djangoproject.com/en/1.10/">
+            <div class="wrap">
+                <div class="box">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+
+                  <div class="text">
+                      <div class="title">Django Settings</div>
+                      <div class="sub-title">You're seeing this page because you have DEBUG=True in your Django settings file and you haven't configured any URLs.</div>
+                  </div>
+                </div>
+            </div></a>
+          </div>
           <div class="step one">
             <a target="_blank" href="https://docs.djangoproject.com/en/1.10/">
             <div class="wrap">
                 <div class="box">
-                  <i class="fa fa-rocket" aria-hidden="true"></i>
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+
                   <div class="text">
                       <div class="title">Django Documentation</div>
                       <div class="sub-title">Everything you need to know about Django; one of its best features!</div>
@@ -54,7 +70,8 @@
             <a target="_blank" href="https://docs.djangoproject.com/en/1.10/intro/tutorial01">
             <div class="wrap">
                 <div class="box">
-                  <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  <i class="fa fa-code" aria-hidden="true"></i>
+
                   <div class="text">
                       <div class="title">Tutorial: Intro Poll App</div>
                       <div class="sub-title">In this tutorial, we'll walk you through the creation of a basic poll application.</div>
@@ -66,7 +83,8 @@
             <a target="_blank" href="https://www.djangoproject.com/community/">
             <div class="wrap">
                 <div class="box">
-                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  <i class="fa fa-users" aria-hidden="true"></i>
+
                   <div class="text">
                       <div class="title">Django Community</div>
                       <div class="sub-title">Django is open source, run by volunteers. Our community is our greatest resource.</div>

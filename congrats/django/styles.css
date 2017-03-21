@@ -1,3 +1,9 @@
+
+/*******************
+ The CSS is being created "mock-up" style. Meaning attention is primarily on the
+design output and not on the code quality during this stage of development.
+*********************/
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -9,7 +15,7 @@ body {
   left: 50%;
   z-index: -1;
   transform: translateY(-50%) translateX(-50%);
-  margin-top: -80px;
+  margin-top: -50px;
 }
 
 .guitar a {
@@ -33,7 +39,7 @@ body {
   top: 50%;
   left: 50%;
   z-index: 99;
-  margin-top: 180px;
+  margin-top: 155px;
   transform: translateY(-50%) translateX(-50%);
   text-align: center;
 }
@@ -42,7 +48,7 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   margin: 0px;
-  font-size: 27px;
+  font-size: 24px;
   margin-bottom: 10px;
   color: #0C4B33;
   margin-top: 25px;
@@ -87,13 +93,9 @@ p {
   padding: 2px;
 }
 
-.fa.fa-file-text-o {
-  font-size: 40px;
-  color: #0C4B33;
-  float:left;
-  display: inline-block;
-  margin-right: 10px;
-  color: #859D9A;
+.fa.fa-file-text-o,
+.fa.fa-users{
+  font-size: 16px !important;
 }
 
 footer p {
@@ -142,9 +144,11 @@ header {
   color: #0C4B33;
   opacity: 0.9;
   font-size: 20px;
+  display:block;
 }
 
-.about {
+.about,
+.sub-logo {
   float:right;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -153,6 +157,22 @@ header {
   padding-top: 6px;
   color: #0C4B33;
   opacity: 0.9;
+}
+
+.sub-logo {
+  display:block;
+  float:none;
+  font-size: 10px;
+  opacity: 0.8;
+  padding-top: 4px;
+}
+
+.about {
+  width: 340px;
+  padding-top: 9px;
+  font-size: 11px;
+  opacity: 0.7;
+  line-height: 15px;
 }
 
 .step {
@@ -213,25 +233,89 @@ header {
 
 .django {
   width: 320px;
-  margin-top: -73px;
+  margin-top: -70px;
 }
 
 .wrap:hover {
   cursor: pointer;
 }
 
+.congrats .notes {
+  margin-top: 8px !important;
+  display: block;
+  font-size: 11px;
+  opacity: 0.7;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #859D9A;
+  font-size: 11px;
+  margin-bottom: 15px;
+  width: 350px;
+  line-height: 20px;
+}
+.debug {
+  display:block;
+}
+
+.settings {
+  display: none;
+}
+
+.next {
+  color: #44B78B;
+  font-weight: 500;
+  font-size: 11px;
+  text-align:center;
+  margin-top: -35px;
+  display:none;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.fa.fa-exclamation {
+  position: absolute;
+  background: #0C4B33;
+  padding: 4px 8px 3px;
+  color:#fff;
+  top: 34px;
+  border-radius: 100%;
+}
+
+.fa.fa-exclamation-triangle {
+  position: absolute;
+  background: none;
+  color:#0C4B33;
+  top: 36px;
+  font-size:15px;
+}
+
+.info {
+  padding-left: 30px;
+}
 @media screen and (max-width: 767px) {
     header, footer {
       width: 100%;
     }
+    .settings {
+      display: block;
+    }
     header {
       padding: 0px;
+    }
+    .sub-logo {
+      margin-top: 5px;
     }
     .logo {
       padding-left: 20px;
       padding-top: 15px;
       padding-bottom: 15px;
     }
+    .info,
+    .fa.fa-exclamation-triangle {
+      display: none;
+    }
+
     footer {
       position: relative;
       margin-top: 100%;
@@ -244,7 +328,7 @@ header {
     .guitar {
           transform: translateX(-50%) scale(0.7);
           top: 0px;
-          margin-top: 130px;
+          margin-top: 155px;
     }
     .step {
       width: 100%;
