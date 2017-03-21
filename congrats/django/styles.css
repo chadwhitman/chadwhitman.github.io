@@ -406,6 +406,10 @@ color: #0C4B33;
   height: 100px;
 }
 
+.idea__two header {
+  padding-top: 16px;
+}
+
 .idea__three .wrap {
   padding-top: 25px;
 }
