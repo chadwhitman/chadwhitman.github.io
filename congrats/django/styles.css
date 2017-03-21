@@ -370,10 +370,27 @@ header {
   padding-top: 0px;
 }
 
+.idea__three header a {
+  color: #0C4B33;
+}
+
 .idea__three .wrap,
 .idea__three .step  {
   width: 100%;
   border-right: 0px;
+}
+
+.idea__three footer .fa {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.idea__three .step  {
+  height: 100px;
+}
+
+.idea__three .wrap {
+  padding-top: 25px;
 }
 .idea__three .text {
   width: 80%;
