@@ -15,7 +15,7 @@ body {
   left: 50%;
   z-index: -1;
   transform: translateY(-50%) translateX(-50%);
-  margin-top: -70px;
+  margin-top: -85px;
 }
 
 .guitar a {
@@ -39,7 +39,7 @@ body {
   top: 50%;
   left: 50%;
   z-index: 99;
-  margin-top: 155px;
+  margin-top: 165px;
   transform: translateY(-50%) translateX(-50%);
   text-align: center;
 }
@@ -123,18 +123,7 @@ footer {
   transform: translateX(-50%);
 }
 
-p span {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  display: block;
-  font-size:13px;
-  color: #0C4B33;
-  display: block;
-  padding-top: 10px;
-  color: #44B78B;
-  opacity: 0.7;
-  display: none;
-}
+
 
 .footer .fa {
   float: left;
@@ -144,8 +133,12 @@ p span {
 header {
   width: 900px;
   margin: 0 auto;
-  padding: 18px 3px 12px 3px;
+  padding: 7px 3px 12px 3px;
   border-bottom: 2px solid #efefef;
+}
+
+.info span {
+  font-weight: 600;
 }
 
 .logo {
@@ -181,11 +174,30 @@ header {
 }
 
 .about {
-  width: 340px;
-  padding-top: 9px;
+  width: auto;
+  padding-top: 20px;
   font-size: 11px;
   opacity: 0.7;
   line-height: 15px;
+}
+
+.info a {
+  text-decoration: none;
+color: #0C4B33;
+
+}
+
+.debug {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+  max-width: 230px;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+
+.debug span {
+  font-weight: 600 !important;
 }
 
 .step {
@@ -301,6 +313,7 @@ header {
   color:#0C4B33;
   top: 36px;
   font-size:15px;
+  display:none;
 }
 
 .info {
