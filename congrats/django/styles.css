@@ -44,6 +44,17 @@ body {
   text-align: center;
 }
 
+.about ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.about ul li {
+  display: inline-block;
+  list-style-type:none;
+  margin-right: 20px;
+}
+
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
@@ -357,4 +368,19 @@ header {
 .idea__two .logo {
   font-size: 20px;
   padding-top: 0px;
+}
+
+.idea__three .wrap,
+.idea__three .step  {
+  width: 100%;
+  border-right: 0px;
+}
+.idea__three .text {
+  width: 80%;
+}
+
+.idea__three .sub-title {
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.8;
 }
