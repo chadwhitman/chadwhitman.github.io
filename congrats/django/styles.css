@@ -90,6 +90,10 @@ p {
   font-size: 13px;
 }
 
+.congrats p {
+  font-weight: 400;
+}
+
 .background {
   z-index: 9999999999;
   position: absolute;
@@ -189,11 +193,11 @@ color: #0C4B33;
 
 .debug {
   font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
+  line-height: 17px;
+  font-weight: 300 !important;
   max-width: 230px;
   margin: 0 auto;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .debug span {
