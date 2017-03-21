@@ -18,6 +18,24 @@ body {
   margin-top: -85px;
 }
 
+.signature {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translateY(-50%) translateX(-50%) rotate(-43deg);
+  margin-top: -85px;
+  font-size: 7px;
+  z-index: 99999999999;
+  font-family: 'Italianno', cursive;
+  color: #fff;
+  margin-top: -37px;
+  margin-right: -13px;
+  right: 60px;
+  opacity: 0.5;
+}
+
 .guitar a {
   text-decoration: none;
   color: #000;
