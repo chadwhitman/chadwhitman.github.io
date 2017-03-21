@@ -15,7 +15,7 @@ body {
   left: 50%;
   z-index: -1;
   transform: translateY(-50%) translateX(-50%);
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .guitar a {
@@ -343,8 +343,14 @@ header {
 
 .idea__two .about {
   width: auto;
+  padding-top:6px;
 }
 
 .idea__two .settings {
   display: block;
+}
+
+.idea__two .logo {
+  font-size: 20px;
+  padding-top: 0px;
 }
