@@ -19,10 +19,10 @@ body {
 
 .credit {
   position: absolute;
-  right: 88px;
+  right: 90px;
   bottom: 14px;
   font-size: 6px;
-  opacity: 0.26;
+  opacity: 0.3;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 
@@ -149,7 +149,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #0C4B33;
-  font-size: 13px;
+  font-size: 12px;
   padding-top: 6px;
   color: #0C4B33;
   opacity: 0.9;
@@ -168,9 +168,10 @@ header {
 
 .wrap {
   width: 280px;
+  height: 60%;
   margin: 0 auto;
   padding-top: 35px;
-  padding-left: 28px;
+  padding-left: 20px;
 }
 
 .box .fa {
@@ -185,7 +186,7 @@ header {
 .text {
   float: left;
   width: 220px;
-  margin-left: 15px;
+  margin-left: 12px;
 }
 
 .title {
@@ -202,7 +203,12 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 11px;
+  line-height: 15px;
+  padding-right: 20px;
+  padding-right: 20px;
+  margin-top: 2px;
   color: #859D9A;
+  opacity: 0.9;
 }
 
 .django {
@@ -212,4 +218,39 @@ header {
 
 .wrap:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    header, footer {
+      width: 100%;
+    }
+    header {
+      padding: 0px;
+    }
+    .logo {
+      padding-left: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    footer {
+      position: relative;
+      margin-top: 100%;
+    }
+    .about {
+      padding-right: 20px;
+      font-size: 9px;
+      padding-top: 22px;
+    }
+    .guitar {
+          transform: translateX(-50%) scale(0.7);
+          top: 0px;
+          margin-top: 130px;
+    }
+    .step {
+      width: 100%;
+      height: 120px;
+      border-right: 0px;
+      float: none;
+      border-bottom: 2px solid #efefef;
+  }
 }
