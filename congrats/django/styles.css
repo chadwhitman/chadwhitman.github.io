@@ -145,6 +145,7 @@ header {
   opacity: 0.9;
   font-size: 20px;
   display:block;
+  padding-top: 13px;
 }
 
 .about,
@@ -165,6 +166,7 @@ header {
   font-size: 10px;
   opacity: 0.8;
   padding-top: 4px;
+  display: none;
 }
 
 .about {
@@ -337,4 +339,12 @@ header {
       float: none;
       border-bottom: 2px solid #efefef;
   }
+}
+
+.idea__two .about {
+  width: auto;
+}
+
+.idea__two .settings {
+  display: block;
 }
