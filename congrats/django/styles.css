@@ -18,6 +18,17 @@ body {
   margin-top: -85px;
 }
 
+.guitar a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  z-index: 9999999999;
+  height: 230px;
+  position: absolute;
+  width: 310px;
+  top: -68px;
+}
+
 .signature {
   display: block;
   position: absolute;
