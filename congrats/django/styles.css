@@ -29,6 +29,11 @@ body {
   top: -68px;
 }
 
+.django {
+  width: 320px;
+  margin-top: -70px;
+}
+
 .signature {
   display: block;
   position: absolute;
