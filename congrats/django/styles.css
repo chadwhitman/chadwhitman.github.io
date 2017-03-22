@@ -42,7 +42,7 @@ body {
   color: #000;
 }
 
-.credit {
+/*.credit {
   position: absolute;
   right: 90px;
   bottom: 14px;
@@ -51,6 +51,18 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 
+}*/
+
+.credit {
+  position: absolute;
+  font-size: 6px;
+  opacity: 0.4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: -9px;
 }
 
 .congrats {
