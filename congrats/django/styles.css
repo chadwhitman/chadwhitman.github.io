@@ -441,3 +441,15 @@ color: #0C4B33;
   font-weight: 400;
   opacity: 0.8;
 }
+
+.idea__four .congrats {
+    margin-top: 150px;
+}
+
+.idea__four .debug {
+  font-size: 11px;
+}
+
+.idea__four .signature {
+  display:none;
+}
