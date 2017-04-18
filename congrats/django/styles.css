@@ -45,17 +45,6 @@ h4 {
     margin: 0;
 }
 
-footer,
-main {
-    position: absolute;
-    left: 50%;
-}
-
-footer,
-header {
-    max-width: 920px;
-}
-
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -241,6 +230,17 @@ body {
     padding: 0 30px;
 }
 
+footer,
+main {
+    position: absolute;
+    left: 50%;
+}
+
+footer,
+header {
+    max-width: 920px;
+}
+
 .clearfix {
     clear: both;
 }
@@ -378,6 +378,12 @@ footer a {
         margin: 60px 0 150px;
         border-top: 2px solid #efefef;
     }
+    .help__wrap {
+      padding: 15px 0 0 0px;
+    }
+    .help__info {
+      max-width: 200px;
+    }
     .help__option {
         float: none;
         width: 100%;
@@ -387,7 +393,7 @@ footer a {
         border-bottom: 2px solid #efefef;
     }
     .figure__animation {
-      width: 165px;
+      width: 165px !important;
     }
     .header__description a {
       font-size: 11px;
@@ -407,6 +413,38 @@ footer a {
       font-size: 13px;
       max-width: 230px;
     }
+}
+
+@media (max-height: 630px)  {
+  .figure__animation {
+    width: 175px;
+  }
+  footer,
+  main {
+      position: relative;
+      left: auto;
+      transform: none;
+  }
+  h2 {
+    margin-top: 0px;
+  }
+  main {
+      display: block;
+      top: auto;
+      margin-top: 25px;
+      text-align: center;
+  }
+  footer {
+      bottom: inherit;
+      max-width: 920px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 10px;
+      border-top: 2px solid #efefef;
+  }
+  p {
+    margin-bottom: 40px;
+  }
 }
 
 .cc-cloud {
