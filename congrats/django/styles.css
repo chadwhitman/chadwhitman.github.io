@@ -431,7 +431,7 @@ footer a {
   main {
       display: block;
       top: auto;
-      margin-top: 25px;
+      margin-top: 50px;
       text-align: center;
   }
   footer {
@@ -439,12 +439,22 @@ footer a {
       max-width: 920px;
       width: 100%;
       margin: 0 auto;
-      margin-top: 90px;
+      margin-top: 70px;
       border-top: 2px solid #efefef;
   }
   p {
     margin-bottom: 40px;
   }
+}
+
+@media (max-height: 630px) and (max-width:900px)  {
+    footer {
+      margin-top: 0px;
+      margin-bottom: 150px;
+    }
+    main {
+        margin-top: 20px;
+    }
 }
 
 .cc-cloud {
