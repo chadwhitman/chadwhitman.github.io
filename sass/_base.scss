@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body, .container {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  padding: 0px;
+  height: 100%;
+  min-height: 550px;
+  margin: 0px;
+  font-family: 'Coustard', serif;
+}
+
+a {
+  text-decoration:none;
+}
+
+section {
+  width: 100%;
+}
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}

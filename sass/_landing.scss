@@ -1,0 +1,661 @@
+//PARDON THE CSS IN HERE//
+
+/* Applied to both halves */
+.left-half,
+.right-half {
+  position: relative;
+  height:100%;
+  min-height: 550px;
+  padding: 15px;
+  z-index: 999999;
+  display:block;
+}
+/* Left Only */
+.left-half {
+  background-color: #ff9e2c;
+  float: left;
+  width: 62%;
+  background-color: #ff9e2c;
+  background: url('/portfolio/images/leftb.png');
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  animation: scaleMe 3.6s infinite ease-in-out alternate;
+}
+
+@keyframes scaleMe {
+  0% {   background-size: 100% 100%; }
+  	100% {   background-size: 103% 103%; }
+}
+
+.text {
+  font-style: italic;
+}
+
+.text span {
+  display:block;
+  font-style:normal;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+
+
+/* Right Only */
+.right-half {
+  background-color: #CD564C;
+  float: left;
+  width: 38%;
+}
+
+#palette {
+  visibility: hidden;
+}
+
+.blue {
+  color: #A0D9E8;
+  font-weight: 700;
+}
+
+.yo {
+  display:none;
+}
+
+/** Water Boat Scene **/
+.scene {
+  position:relative;
+  height: 250px;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transform-style: preserve-3d;
+}
+
+
+
+#buoy {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#whale {
+  position: absolute;
+  left: -25px;
+  top: 100px;
+}
+
+.ripples {
+  border: 1px solid #001731;
+  width: 30px;
+  height: 20px;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 139px;
+  display:none;
+  transform-style: preserve-3d;
+}
+
+@keyframes ripples {
+  0% {
+    transform: scale(1.0);
+    opacity: 0.0;
+  }
+  10% {
+    transform: scale(1.3);
+    opacity: 0.0;
+  }
+  20% {
+    transform: scale(1.0);
+    opacity: 0.1;
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0.0;
+  }
+}
+
+.bulb {
+  animation: bulb 2s infinite ease-in-out alternate;
+}
+
+.submarine {
+  transform: rotate(20deg);
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  transform: translateX(-50%) translateY(-25%);
+  transform-style: preserve-3d;
+  width: 100%;
+  max-width: 320px;
+}
+
+.first {
+  font-weight: 900;
+  display:inline-block;
+  font-family: 'Coustard', serif;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.corner-view {
+  font-size: 18px;
+  font-family: 'Coustard', serif;
+  font-weight: 900;
+  display:inline-block;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  a {
+    color: #fff;
+  }
+  &:after {
+    border-bottom: 0.125em solid rgba(#CD564C, 0.6);
+    content: "";
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.time {
+  display:inline-block;
+  font-family: 'Coustard', serif;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 3px;
+}
+
+.subtitle,
+.smaller {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 7px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.smaller {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 270px;
+}
+
+.contact {
+  background: #CD564C;
+  width: 80px;
+  height: 118px;
+  border-radius: 100%;
+  font-size: 15px;
+  padding:33px 0px 0px 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-style: preserve-3d;
+  left: -28px;
+  cursor:pointer;
+}
+
+.welcome {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  z-index: 999999;
+  font-family: 'Coustard', serif;
+  font-weight: 900;
+  font-size: 19px;
+  flex-direction:row;
+  text-transform: uppercase;
+}
+
+.welcome span:first-of-type {
+  color:#CD564C;
+}
+
+.my-twitter {
+  width: 100px;
+  color: #CD564C;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  padding: 5px 2px 2px 2px;
+  text-align:center;
+  display:inline-block;
+  font-size: 14px;
+  line-height: 14px;
+
+font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+}
+
+.my-work {
+  width: 100px;
+  color: #CD564C;
+    text-align:center;
+      padding: 5px 2px 2px 2px;
+      display:inline-block;
+  border: 2px solid #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-weight: 600;
+
+    font-family: 'Josefin Slab', serif;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.view-more {
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  z-index: 999999;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.telescope {
+  visibility: hidden;
+}
+
+.behance {
+  padding: 2px;
+  display:block;
+  border-radius: 4px;
+  opacity: 0.9;
+  cursor:pointer;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.twitter {
+  padding: 2px;
+  opacity: 0.9;
+    display:block;
+  border-radius: 4px;
+  cursor:pointer;
+    color: #fff;
+}
+
+.linkedin {
+  border: 2px solid #ffffff;
+  padding: 2px;
+  border-radius: 4px;
+  opacity: 0.9;
+  cursor:pointer;
+}
+
+
+.rocket {
+  position: relative;
+  width: 32px;
+  height: auto;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-style: preserve-3d;
+  margin-bottom: 20px;
+}
+
+.submarine {
+  position: relative;
+  height: auto;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-style: preserve-3d;
+  margin-bottom: 15px;
+}
+
+.scope {
+  animation: scope 2.5s infinite ease-in-out alternate;
+}
+
+@keyframes scope {
+  0% {
+    transform: translateY(38px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.view-more span {
+    background: #CD564C;
+    width: 36px;
+    display:block;
+    height: 5px;
+    margin-bottom:10px;
+}
+.name div:first-of-type {
+  color: #CD564C;
+}
+
+.recommendations {
+  position: absolute;
+  right: -55px;
+  bottom: 115px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #9ED0DD;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  transform-style: preserve-3d;
+  span {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+.quotes {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align:left;
+  font-size: 18px;
+  line-height: 25px;
+  opacity: 0.8;
+  width: 100%;
+  font-weight: 600;
+  max-width: 310px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.author {
+  text-align:left;
+  font-size: 15px;
+  margin-top: 13px;
+  z-index: 99999;
+  padding-left: 13px;
+  a {
+    color: #fff;
+      z-index: 99999;
+    border-bottom: 1px dotted #fff;
+    cursor: pointer;
+  }
+  span {
+    display:block;
+    padding-left: 13px;
+  }
+  &:before {
+    content: "--";
+    position: absolute;
+    margin-left:-12px;
+  }
+}
+
+.format {
+  position: relative;
+}
+
+.format__quote {
+    position: absolute;
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    transform: scale(-1);
+    transform-style: preserve-3d;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width:1050px) {
+  .left-half {
+    width: 60%;
+  }
+  .right-half {
+    width: 40%;
+  }
+  .quotes {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width:920px) {
+  .left-half {
+    width: 55%;
+  }
+  .right-half {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .left-half {
+    width: 50%;
+  }
+  .right-half {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .mobile-hey {
+    text-align:center;
+    margin-top: 25px;
+    display:none;
+  }
+  .corner-view {
+    font-size: 15px;
+  }
+  .yo {
+    display:inline-block;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #A0D9E8;
+    font-weight: 600;
+    text-decoration: underline;
+    display:inline-block !important;
+    a {
+        color: #A0D9E8;
+    }
+    &:first-of-type {
+      margin-right: 25px;
+    }
+  }
+  body {
+    min-height: 100%;
+    height: 100%;
+    min-height: 495px;
+  }
+  .left-half {
+    float:none;
+    display:block;
+    width: 100%;
+    min-height: auto;
+    height: 45%;
+    position:relative;
+    overflow:hidden;
+  }
+  .right-half {
+    float:none;
+    display:block;
+    position:relative;
+    min-height: auto;
+    width: 100%;
+    height: 55%;
+    position:relative;
+    overflow:hidden;
+  }
+  #all {
+    width: 180px;
+  }
+  .scene {
+    position: relative;
+    transform: none;
+    margin: 0 auto;
+    width: 180px;
+    top: auto;
+    margin-top: -20px;
+    left: auto;
+    height: 100%;
+  }
+  #whale {
+    left: -45px;
+    width: 57px;
+  }
+  #buoy {
+    width: 55px;
+    bottom: 10px;
+    right: -45px;
+  }
+  .welcome {
+    font-size: 16px;
+  }
+  .subtitle {
+    text-align:left;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0px 15px;
+    top: 22%;
+  }
+
+  .recommendations {
+    display:none;
+  }
+  .first {
+    font-size: 18px;
+    margin: 0px;
+  }
+  .subtitle {
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .rocket {
+    margin-top: 10px;
+  }
+  .quotes {
+    bottom: 10px;
+    font-size: 13px;
+    padding-bottom: 20px;
+    opacity: 0.9;
+    display:none;
+    .author {
+      padding-left: 0px;
+      font-size: 10px;
+      text-align:center;
+    }
+  }
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    z-index:99999;
+    top: 41%;
+    right: 20px;
+    bottom: 0px;
+    background: #fff;
+    color: #CD564C;
+    height: 40px;
+    padding: 10px 13px 8px 13px;
+    border-radius: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  }
+
+  .behance {
+    width:30% !important;
+  }
+
+  .twitter {
+      width:30% !important;
+
+  }
+  .view-more {
+    bottom: 12px;
+    left: auto;
+    right: 22px;
+    span {
+      display:none;
+    }
+  }
+
+  .linkedin {
+    width:30% !important;
+  }
+
+  // .submarine {
+  //   animation: subMobile 5s ease-in-out;
+  //   animation-fill-mode:forwards;
+  //   animation-iteration-count: 1;
+  //   transform: translateX(-50%);
+  //   margin-left: -30px;
+  // }
+  //
+  // .telescope {
+  //   bottom: -15px;
+  //   left: 0px;
+  //   visibility: visible;
+  //   position: absolute;
+  //   animation: telescopeMobile 12s ease-in-out;
+  //   animation-delay: 3.3s;
+  //   opacity: 0.0;
+  //   animation-fill-mode: forwards;
+  //   animation-iteration-count: 1;
+  // }
+}
+
+@keyframes telescopeMobile {
+  0% {
+      transform: translateX(0px) translateY(0px);
+      opacity: 1.0;
+  }
+  40% {
+      transform: translateX(-50px) translateY(-40px);
+      opacity: 1.0;
+  }
+  80% {
+      transform: translateX(-400px) translateY(-70px);
+      opacity: 1.0;
+  }
+  100% {
+      transform: translateX(-400px) translateY(-70px);
+      opacity: 1.0;
+      display:none;
+
+  }
+}
+
+@keyframes subMobile {
+  0% {
+      transform: translateY(0px);
+  }
+  100% {
+      transform: translateY(-250px);
+      display:none;
+  }
+}
+
+@media screen and (max-height:495px) {
+  .mobile-menu {
+    top: 200px;
+  }
+}

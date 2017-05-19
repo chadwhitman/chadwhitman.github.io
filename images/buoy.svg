@@ -1,0 +1,143 @@
+<svg id="buoy2" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 512 512">
+  <style>
+    .side,
+    .strip {
+      fill: #CD564C;
+    }
+
+    .cap {
+      fill: #ffffff;
+    }
+
+    .captain {
+      fill: #ABD8E6;
+    }
+
+    .sail {
+      fill: #ffffff;
+      animation: sail 2.5s infinite ease-in-out alternate;
+    }
+
+    .sailpost {
+      animation: sailpost 2.5s infinite ease-in-out alternate;
+    }
+
+    #all {
+        animation: boat 2s infinite ease-in-out alternate;
+    }
+
+    @keyframes boat {
+      0% {
+        transform: translateY(-2px);
+      }
+      100% {
+        transform: translateY(2px);
+      }
+    }
+    @keyframes sailpost {
+      0% {
+        transform: translateX(0px) skewX(0deg);
+      }
+      100% {
+        transform: translateX(1px) skewX(1deg);
+      }
+    }
+
+    .bottom {
+      animation: bottom 2.3s infinite ease-in-out alternate;
+    }
+
+    .top {
+      animation: whale 2.3s infinite ease-in-out alternate;
+    }
+
+    .ripple {
+      display:none;
+    }
+
+    /* .top,
+    .bottom {
+       animation: ripple 2s infinite ease-in-out alternate;
+    } */
+
+    @keyframes whale {
+      0% {
+            transform: skewX(-6deg) ;
+      }
+      100% {
+          transform: skewX(6deg);
+      }
+    }
+
+    @keyframes bottom {
+      0% {
+            transform: scale(1.00) translateX(-19px);
+      }
+      100% {
+          transform: scale(1.101) translateX(-7px) translateY(-17px);
+      }
+    }
+
+    @keyframes sail {
+      0% {
+        transform: translateX(-1px) skewX(-1deg);
+      }
+      100% {
+        transform: translateX(1px) skewX(1deg);
+      }
+    }
+
+    #sharkfin {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      animation: shark 10s;
+      animation-delay: 3s;
+      transform: rotate(25deg);
+      display:none;
+    }
+
+
+
+    @keyframes shark {
+       0% {
+        transform: rotate(25deg);
+        margin-right: 0px;
+        opacity: 1.0;
+
+      }
+      90% {
+        margin-right: 300px;
+        transform: scale(0.1) rotate(25deg);
+      }
+      95% {
+        transform: scale(0.0) rotate(25deg);
+      }
+    }
+
+    #buoy2 {
+      animation: buoy 2.5s infinite ease-in-out alternate;
+    }
+
+    @keyframes buoy {
+      0% {
+        transform: rotate(-5deg) translateY(0px);
+      }
+      100% {
+        transform: rotate(5deg) translateY(3px);
+      }
+    }
+
+  </style>
+  <path fill="#ffffff" d="M328.364 320.445c-39.966-23.074-104.764-23.074-144.73 0-21.766 12.566-29.974 23.348-29.974 39.902 0 23.654 32.817 85.694 102.342 85.694S358.25 384.95 358.25 361.43c0-15.122-9.904-29.448-29.886-40.985z"/>
+  <path fill="#4d4d4d" d="M328.364 317.196c-39.966-23.074-104.764-23.074-144.73 0-9.688 5.594-29.974 4.764-29.974 4.764s-.14 29.638.005 37.633c.268 14.915 10.258 29.782 29.97 41.163 39.965 23.074 104.763 23.074 144.73 0 19.142-11.052 29.115-25.393 29.92-39.873.223-3.984.054-35.968.054-35.968s-14.42 1.263-29.976-7.72z"/>
+  <path fill="#FFE985" d="M328.364 283.135c-39.966-23.074-104.764-23.074-144.73 0-39.966 23.075-39.966 60.485 0 83.56 39.966 23.074 104.764 23.074 144.73 0 39.966-23.075 39.966-60.486 0-83.56z"/>
+  <path fill="#4d4d4d" d="M255.935 100.548l-39.574 25.04-39.47 226.873s.633 3.696 8.338 5.048c7.704 1.352 10.837-1.71 10.837-1.71l37.992-218.376 21.92-13.87 19.183 12.042 30.943 219.89s3.07 4.862 11.044 3.49c7.974-1.37 8.23-6.202 8.23-6.202L293.174 123.92l-37.24-23.372z"/>
+  <path fill="#4d4d4d" d="M246.224 279.796s1.18 4.453 9.73 4.453c8.554 0 9.733-4.454 9.733-4.454V112.05h-19.463v167.746z"/>
+  <path fill="#ffffff" d="M212.758 123.556c0 6.385 4.22 12.77 12.658 17.64 16.877 9.745 44.24 9.745 61.12 0 8.438-4.872 12.657-11.258 12.657-17.644v-10.798l-86.436-1.717v12.52z"/>
+  <path fill="#4d4d4d" d="M286.536 95.11c-16.878-9.744-44.242-9.744-61.12 0-16.877 9.744-16.877 25.543 0 35.287 16.878 9.744 44.242 9.744 61.12 0 16.877-9.744 16.877-25.542 0-35.287z"/>
+  <path fill="#ffffff" d="M277.906 97.387c-12.123-7-31.777-7-43.9 0-12.123 7-12.123 18.346 0 25.346 12.123 6.998 31.777 6.998 43.898 0 12.122-7 12.122-18.347.002-25.346z"/>
+  <path fill="#FFE985" d="M280.916 91.697c0-12.918-10.515-25.737-24.326-25.737-13.812 0-25.257 11.47-25.257 25.737 0 9.403-.254 15.26-.254 15.26h.05c-.412 3.983 2.013 8.046 7.285 11.09 9.78 5.646 25.638 5.646 35.42 0 5.27-3.045 7.696-7.107 7.285-11.09h.05s-.254-5.857-.254-15.26z"/>
+  <path fill="#4d4d4d" d="M287.482 162.28l-5.55-7.996-74.738 51.88 101.412 116.864 7.35-6.377-94.304-108.674"/>
+  <path fill="#4d4d4d" d="M222.174 163.515l66.034 45L189.7 319.37l7.274 6.465 105.86-119.125-75.18-51.237"/>
+</svg>

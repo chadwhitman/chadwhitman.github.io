@@ -1,0 +1,269 @@
+.side,
+.strip {
+  fill: #CD564C;
+}
+
+.cap {
+  fill: #ffffff;
+}
+
+.captain {
+  fill: #ABD8E6;
+}
+
+.sail {
+  fill: #ffffff;
+  animation: sail 2s infinite ease-in-out alternate;
+  transform-style: preserve-3d;
+}
+
+.sailpost {
+  animation: sailpost 2s infinite ease-in-out alternate;
+  transform-style: preserve-3d;
+}
+
+#all {
+    animation: boat 2.5s infinite ease-in-out alternate;
+    transform-style: preserve-3d;
+}
+
+@keyframes boat {
+  0% {
+    transform: translateY(-2px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(2px) rotate(1deg);;
+  }
+}
+
+
+@keyframes sailpost {
+  0% {
+    transform: translateX(0px) skewX(0deg);
+  }
+  100% {
+    transform: translateX(1px) skewX(1deg);
+  }
+}
+
+.bottom {
+  animation: bottom 4s infinite ease-in-out alternate;
+  transform-style: preserve-3d;
+}
+
+.top {
+  animation: whale 4s infinite ease-in-out alternate;
+  transform-style: preserve-3d;
+}
+
+.ripple {
+  display:none;
+}
+
+@keyframes ripple {
+  0% {
+        transform: skewX(-6deg) translateX(10px);
+  }
+  10% {
+      transform: skewX(6deg) translateX(-7px);
+  }
+  20% {
+        transform: skewX(-6deg) translateX(10px);
+  }
+  30% {
+      transform: skewX(6deg) translateX(-7px);
+  }
+  100% {
+    transform: skewX(6deg) translateX(-7px);
+  }
+}
+
+@keyframes whale {
+  0% {
+        transform: skewX(-6deg) ;
+  }
+  10% {
+      transform: skewX(6deg);
+  }
+  20% {
+        transform: skewX(-6deg) ;
+  }
+  30% {
+      transform: skewX(6deg);
+  }
+  100% {
+    transform: skewX(6deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+        transform: scale(1.00) translateX(-19px);
+  }
+  10% {
+      transform: scale(1.101) translateX(-7px) translateY(-17px);
+  }
+  20% {
+        transform: scale(1.00) translateX(-19px);
+  }
+  30% {
+      transform: scale(1.101) translateX(-7px) translateY(-17px);
+  }
+  100% {
+      transform: scale(1.101) translateX(-7px) translateY(-17px);
+  }
+}
+
+@keyframes sail {
+  0% {
+    transform: translateX(-1px) skewX(-1deg);
+  }
+  100% {
+    transform: translateX(1px) skewX(1deg);
+  }
+}
+
+#sharkfin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  animation: shark 10s;
+  animation-delay: 3s;
+  transform: rotate(25deg);
+  display:none;
+}
+
+@keyframes shark {
+   0% {
+    transform: rotate(25deg);
+    margin-right: 0px;
+    opacity: 1.0;
+
+  }
+  90% {
+    margin-right: 300px;
+    transform: scale(0.1) rotate(25deg);
+  }
+  95% {
+    transform: scale(0.0) rotate(25deg);
+  }
+}
+
+#buoy {
+  animation: buoy 2s infinite ease-in-out alternate;
+  transform-style: preserve-3d;
+}
+
+@keyframes buoy {
+  0% {
+    transform: rotate(-5deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(5deg) translateY(3px);
+  }
+}
+
+@keyframes bulb {
+  0% {
+    fill: #FFE97C;
+    filter: brightness(100%);
+  }
+  100% {
+    fill: #D6746C;
+    transform-origin: center;
+    filter: brightness(150%);
+
+  }
+}
+
+
+
+@keyframes ripples {
+  0% {
+    transform: scale(1.0);
+    opacity: 0.1;
+  }
+  10% {
+    transform: scale(1.3);
+    opacity: 0.0;
+  }
+  20% {
+    transform: scale(1.0);
+    opacity: 0.1;
+  }
+  30% {
+    transform: scale(1.3);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0.0;
+  }
+}
+
+.launch {
+  animation: launch 2s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-style: preserve-3d;
+}
+
+.openLeft {
+  animation: openLeft 1.3s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.openRight {
+  animation: openRight 2s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  transform-style: preserve-3d;
+}
+
+@keyframes launch {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-300px);
+    display:none;
+  }
+}
+
+@keyframes openLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1000px);
+    display:none;
+  }
+}
+
+@keyframes openRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1000px);
+    display:none;
+  }
+}
+
+.propeller {
+  animation: propeller 1.4s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes propeller {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
