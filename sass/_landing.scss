@@ -32,6 +32,19 @@
   font-style: italic;
 }
 
+.lily-path{
+  animation: op 2.3s infinite ease-in-out alternate;
+}
+
+@keyframes op {
+  0% {
+      fill: #CD564C;
+  }
+  100% {
+       fill: #963F38;
+  }
+}
+
 .text span {
   display:block;
   font-style:normal;
@@ -602,25 +615,25 @@ font-family: 'Josefin Slab', serif;
     width:30% !important;
   }
 
-  // .submarine {
-  //   animation: subMobile 5s ease-in-out;
-  //   animation-fill-mode:forwards;
-  //   animation-iteration-count: 1;
-  //   transform: translateX(-50%);
-  //   margin-left: -30px;
-  // }
-  //
-  // .telescope {
-  //   bottom: -15px;
-  //   left: 0px;
-  //   visibility: visible;
-  //   position: absolute;
-  //   animation: telescopeMobile 12s ease-in-out;
-  //   animation-delay: 3.3s;
-  //   opacity: 0.0;
-  //   animation-fill-mode: forwards;
-  //   animation-iteration-count: 1;
-  // }
+  .submarine {
+    animation: subMobile 5s ease-in-out;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    transform: translateX(-50%);
+    margin-left: -30px;
+  }
+
+  .telescope {
+    bottom: -15px;
+    left: 0px;
+    visibility: visible;
+    position: absolute;
+    animation: telescopeMobile 12s ease-in-out;
+    animation-delay: 3.3s;
+    opacity: 0.0;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
 }
 
 @keyframes telescopeMobile {
