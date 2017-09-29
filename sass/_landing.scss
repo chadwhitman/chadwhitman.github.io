@@ -181,6 +181,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    display:none;
   }
 }
 
@@ -212,17 +213,19 @@
 
 .contact {
   background: #CD564C;
-  width: 80px;
-  height: 118px;
+  width: 70px;
+  height: 75px;
   border-radius: 100%;
   font-size: 15px;
-  padding:33px 0px 0px 8px;
+  padding: 28px 0px 0px 8px;
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   left: -28px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .welcome {
@@ -457,6 +460,19 @@ font-family: 'Josefin Slab', serif;
   .right-half {
     width: 45%;
   }
+  .time ul {
+    margin-left: 0px !important;
+  }
+  .corner-view {
+    display:none;
+  }
+  .time__arrow {
+    display:none;
+  }
+}
+
+.left-half {
+  background:blue !important;
 }
 
 @media screen and (max-width:850px) {
@@ -479,9 +495,9 @@ font-family: 'Josefin Slab', serif;
     a {
       color: #A0D9E8;
       display:inline-block;
-      font-size: 16px;
+      font-size: 15px;
       margin-top: 40px;
-      margin-right: 20px;
+      margin-right: 10px;
     }
   }
   .mobile-hey {
@@ -686,5 +702,34 @@ font-family: 'Josefin Slab', serif;
 @media screen and (max-height:495px) {
   .mobile-menu {
     top: 200px;
+  }
+}
+
+#left-half {
+  background: blue;
+}
+
+.time__arrow {
+  width: 15px;
+  position: absolute;
+  top:12px;
+}
+
+.time ul {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 22px;
+  li {
+    list-style-type: none;
+    display:inline-block;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    margin-right: 7px;
+    a {
+      color: #fff;
+      @include on-event {
+        text-decoration:underline;
+      }
+    }
   }
 }
