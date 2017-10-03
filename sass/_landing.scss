@@ -188,7 +188,7 @@
 .time {
   display:inline-block;
   font-family: 'Coustard', serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 300;
   padding-left: 3px;
 }
@@ -716,7 +716,7 @@ font-family: 'Josefin Slab', serif;
     display:inline-block;
     font-family: 'Josefin Slab', serif;
     font-weight: 400;
-    margin-right: 7px;
+    margin-right: 10px;
     a {
       color: #fff;
       @include on-event {
