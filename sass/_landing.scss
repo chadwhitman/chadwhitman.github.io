@@ -70,6 +70,10 @@
   font-weight: 700;
 }
 
+.blue:hover {
+  text-decoration: underline;
+}
+
 .yo {
   display:none;
 }
@@ -161,6 +165,10 @@
   font-size: 21px;
 }
 
+.mobile__links a {
+  font-weight: 600;
+}
+
 .corner-view {
   font-size: 18px;
   font-family: 'Coustard', serif;
@@ -171,6 +179,9 @@
   text-transform: uppercase;
   a {
     color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &:after {
     border-bottom: 0.125em solid rgba(#CD564C, 0.6);
@@ -197,7 +208,7 @@
 .smaller {
   font-weight: 400;
   font-size: 22px;
-  line-height: 34px;
+  line-height: 27px;
   width: 100%;
   opacity: 0.9;
   margin-bottom: 7px;
@@ -463,9 +474,6 @@ font-family: 'Josefin Slab', serif;
   .time ul {
     margin-left: 0px !important;
   }
-  .corner-view {
-    display:none;
-  }
   .time__arrow {
     display:none;
   }
@@ -485,6 +493,11 @@ font-family: 'Josefin Slab', serif;
 }
 
 @media screen and (max-width:720px) {
+
+  .propeller {
+    animation: none !important;
+    transform-origin: none;
+  }
 
   .mobile__links {
     display:block;
