@@ -86,7 +86,6 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  transform-style: preserve-3d;
 }
 
 
@@ -152,7 +151,6 @@
   left: 50%;
   top: 17%;
   transform: translateX(-50%) translateY(-25%);
-  transform-style: preserve-3d;
   width: 100%;
   max-width: 320px;
 }
@@ -737,4 +735,12 @@ font-family: 'Josefin Slab', serif;
       }
     }
   }
+}
+
+_:-moz-tree-row(hover), .propeller {
+  transform-origin: 55% 58% !important;
+}
+
+_:-moz-tree-row(hover), .scope {
+  animation: scope 1.5s infinite ease-in-out alternate !important;
 }
